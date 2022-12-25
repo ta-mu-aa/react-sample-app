@@ -1,5 +1,5 @@
 function App() {
-  return <p>TODOアプリを実装</p>;
+  return <p>サンプルアプリを作成</p>;
 }
 
 export default App;
