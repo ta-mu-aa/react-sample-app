@@ -1,6 +1,7 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 import { Login } from "../components/pages/Login";
+import { Page404 } from "../components/pages/404page";
 import { homeRoutes } from "./HomeRoutes";
 
 export const Router = () => {
@@ -22,9 +23,15 @@ export const Router = () => {
                 {route.children}
               </Route>
             ))}
+            <Route path="*">
+              <Page404 />
+            </Route>
           </Switch>
         )}
       />
+      <Route path="*">
+        <Page404 />
+      </Route>
     </Switch>
   );
 };
